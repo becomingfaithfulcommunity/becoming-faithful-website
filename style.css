@@ -1,0 +1,633 @@
+
+body {
+	box-sizing: border-box;
+}
+body {
+	background-color: #1F2A44;
+	text-align: center;
+	padding:20px;
+	margin: 0;
+}
+
+h1, h2{
+	color: #3b2e6e;
+}
+h1 {
+	font-size:40px;
+	margin-bottom: 30px;
+	text-align: Center;
+	letter-spacing: 1px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #3b2e6e;
+}
+h2{
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 28px;
+	margin-top: 40px;
+}
+.defining-love h2 {
+	margin-bottom: 28px;
+}
+p {
+	color: #2f3a4a;
+	max-width: 600px;
+	margin: auto;
+	margin-bottom: 24px;
+	line-height: 1.6;
+	text-align: left; 
+}
+	.Bible-verse {
+		font-style:italic;
+		font-weight: 600;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		color:#3b2e6e
+	}
+	.defining-love .Bible-verse {
+		padding-left: 16px;
+		padding-right: 12px;
+		border-left: 3px solid #3b2e6e;
+	}
+.intro {
+	font-size: 20px;
+	color:#3b2e6e;
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+main {
+	background-color: #FFF8E7;
+	max-width: 900px;
+	margin: auto;
+	padding:40px;
+	border-radius: 12px;
+	box-shadow: 0 6px 18px rgba (0, 0, 0.25);
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 90%;
+	box-sizing: border-box;
+	
+}
+.content-section{
+	padding: 30px;
+	margin-bottom: 30px;
+	background-color: #fffdf7;
+	border-radius: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #e8e0d0;
+}
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: 1px solid #e8e0d0;
+}
+
+.hero-background {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 253, 247, 0.62);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+    text-align: center;
+}
+
+.hero-kicker {
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #3B2E6E;
+}
+
+.hero-section h1 {
+    margin-bottom: 18px;
+    color: #2A3559;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+}
+
+.hero-text {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero-button-primary {
+    color: #F7F3E8;
+    background-color: #3B2E6E;
+}
+
+.hero-button-secondary {
+    color: #3B2E6E;
+    background-color: #F7F3E8;
+    border: 1px solid #3B2E6E;
+}
+.built-from-beginning {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.built-from-beginning p {
+    margin-bottom: 20px;
+}
+
+.built-from-beginning h2 {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.built-from-beginning h3 {
+    margin-top: 34px;
+    margin-bottom: 16px;
+    color: #3B2E6E;
+}
+
+.built-from-beginning strong {
+    color: #3B2E6E;
+    font-weight: 700;
+}
+	.defining-love {
+		background-color:#f7f2ff;
+
+	}
+.everyday-life p {
+	line-height: 1.7;
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 18px;
+
+}
+.everday-life h3 {
+	margin-top: 35px;
+	margin-bottom: 12px;
+}
+.mission-section p,
+.commitments-section p,
+.particpipation-section p {
+    font-style: normal;
+    line-height: 1.7;
+}
+.mission-section,
+.commitments-section,
+.particpipation-section {
+	text-align: left;
+}
+.mission-section h2,
+.commitments-section h2,
+.particpipation-section h2 {
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+/* Support page styles */
+#support .content-section {
+    margin-bottom: 24px;
+}
+
+#support h1 {
+    margin-bottom: 28px;
+}
+
+#support h2 {
+    margin-bottom: 14px;
+}
+
+.support-action {
+    text-align: center;
+	padding-top: 28px;
+	padding-bottom:28px
+}
+
+.support-action p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.support-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 20px;
+    background-color: #3B2E6E;
+    color: #F7F3E8;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.support-button:hover,
+.support-button:focus {
+    background-color: #2A3559;
+    transform: translateY(-2px);
+}
+.site-emblem-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.site-emblem {
+    display: block;
+    width: min(100%, 520px);
+    height: auto;
+    margin: 0 auto;
+}
+/* Navigation stlyes */ 
+.connect-links {
+    display: grid;
+    gap: 10px;
+	margin-bottom: 24px;
+}
+
+.connect-link {
+    display: block;
+    width:  calc(100% - 36px);
+	max-width: 520px;
+	margin: 0 auto;
+    padding: 12px 16px;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+
+    color: #F7F3E8;
+    background-color: #3B2E6E;
+
+    border: 1px solid #D8D1C2;
+    border-radius: 10px;
+
+    transition: transform 0.2s ease,
+                background-color 0.2s ease;
+}
+
+.connect-link:hover,
+.connect-link:focus {
+    background-color: #2A3559;
+    transform: translateY(-2px);
+}
+
+/* ---------- DESKTOP NAVIGATION ---------- */
+.nav-toggle {
+    display: none;
+}
+
+.site-nav {
+    --nav-item-width: 120px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 24px;
+    position: relative;
+    background-color: #2A3559;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    width: auto;
+    padding: 0;
+}
+
+.nav-logo img {
+    display: block;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+.site-nav > a,
+.nav-dropdown {
+    width: var(--nav-item-width);
+    flex: 0 0 var(--nav-item-width);
+}
+
+.site-nav > a,
+.nav-dropdown-button {
+    display: block;
+    padding: 10px 8px;
+    text-align: center;
+
+    text-decoration: none;
+    font: inherit;
+    font-weight: 600;
+    line-height: 1;
+
+    color: #F7F3E8;
+    background: none;
+    border: none;
+}
+
+.site-nav > a:hover,
+.site-nav > a:focus,
+.nav-dropdown-button:hover,
+.nav-dropdown-button:focus {
+    color: #DCCCF5;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-button {
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-dropdown-button::after {
+    content: "";
+    display: inline-block;
+    margin-left: 6px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid currentColor;
+
+    vertical-align: middle;
+    transition: transform 0.25s ease;
+}
+
+.nav-dropdown.is-open .nav-dropdown-button::after {
+    transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+    display: none;
+
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+
+    width: max-content;
+    min-width: 100%;
+
+    padding: 6px;
+    text-align: left;
+
+    z-index: 1000;
+
+    background-color: #F7F3E8;
+    border: 1px solid #D8D1C2;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.nav-dropdown.is-open .nav-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-dropdown-menu a {
+    display: block;
+    padding: 8px 6px;
+
+    color: #3B2E6E;
+    text-decoration: none;
+    text-align: left;
+
+    white-space: normal;
+    overflow-wrap: break-word;
+
+    border-radius: 6px;
+}
+
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus {
+    background-color: #EDE7F6;
+    color: #2A3559;
+}
+
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.language-switcher a,
+.current-language {
+    color: #F7F3E8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.language-switcher a:hover {
+    color: #DCCCF5;
+}
+/* ---------- MOBILE NAVIGATION ---------- */
+
+@media (max-width: 600px) {
+
+	.hero-content {
+    padding: 12px;
+}
+
+.hero-kicker {
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+}
+
+.hero-section h1 {
+    font-size: 1.9rem;
+    margin-bottom: 8px;
+}
+
+.hero-text {
+    font-size: 0.8rem;
+    line-height: 1.35;
+    margin: 0 auto 12px;
+}
+
+.hero-actions {
+    gap: 8px;
+}
+
+.hero-button {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+}
+ .site-nav {
+    --nav-item-width: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    padding: 16px;
+}
+.language-switcher {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    padding-top: 8px;
+}
+
+.site-nav.nav-open .language-switcher {
+    display: flex;
+}
+.site-emblem {
+    width: 90%;
+    max-width: 360px;
+}
+    .nav-toggle {
+        display: block;
+
+        width: auto;
+		justify-self: end;
+        padding: 10px 12px;
+
+        text-align: left;
+        font: inherit;
+        font-weight: 600;
+
+        color: #F7F3E8;
+        background: none;
+
+        border: 1px solid rgba(247, 243, 232, 0.35);
+        border-radius: 8px;
+
+        cursor: pointer;
+    }
+.site-nav > .nav-logo {
+    width: auto;
+    justify-self: start;
+}
+    .site-nav > a:not(.nav-logo),
+    .nav-dropdown {
+        display: none;
+        width: 100%;
+        grid-column: 1 /-1;
+    }
+
+    .site-nav.nav-open > a:not(.nav-logo),
+.site-nav.nav-open .nav-dropdown {
+    display: block;
+}
+
+    .site-nav > a,
+    .nav-dropdown-button {
+        width: 100%;
+        padding: 12px 12px;
+        text-align: left;
+    }
+
+    .nav-dropdown {
+        position: static;
+    }
+
+    .nav-dropdown-menu {
+        display: none;
+
+        position: static;
+        transform: none;
+
+        width: 100%;
+        min-width: 0;
+
+        margin-top: 4px;
+        padding: 8px 0 8px 18px;
+
+        background-color: rgba(247, 243, 232, 0.10);
+        border: none;
+        border-radius: 8px;
+        box-shadow: none;
+    }
+
+    .nav-dropdown.is-open .nav-dropdown-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-dropdown-menu a {
+        padding: 8px 10px;
+        font-size: 0.95rem;
+        color: #F7F3E8;
+    }
+}
+	body{
+		padding: 10px;
+	}
+	.content-section{
+	padding: 16px;
+}
+main{
+	width: 100%;
+	padding:12px;
+}
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size:24px;
+}
+p {
+	font-size:16px;
+}
+.intro {
+	font-size: 18px;
+	margin-bottom: 18px;
+}
+.everyday-life p {
+	max-width: 100%;
+	line-height:1.6;
+}
+.everyday-life h3 {
+	margin-top: 28px;
+}
+.Bible-verse {
+	margin: 20px 0;
+}
+
+
+
+
+
+	
+		
+	
+
+
+

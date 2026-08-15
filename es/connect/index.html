@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Conecta con Becoming Faithful</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+    name="description"
+    content="Conecta con Becoming Faithful a través de las redes sociales, sigue contenido nuevo, haz preguntas, comparte con otros y mantente conectado."
+>
+
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <nav class="site-nav">
+
+        <button class="nav-toggle" type="button" aria-expanded="false">
+            Menú
+        </button>
+
+        <a href="../#home">Inicio</a>
+<a href="../#about">Acerca de</a>
+<a href="../#mission">Misión</a>
+
+   <div class="nav-dropdown">
+    <button
+        class="nav-dropdown-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="grow-menu"
+    >
+        Crecer
+    </button>
+
+    <div class="nav-dropdown-menu" id="grow-menu">
+       <a href="../#love">Amor</a>
+<a href="../#hope">Esperanza</a>
+<a href="../#faith">Fe</a>
+<a href="../#wisdom">Sabiduría</a>
+<a href="../#everyday-life">Vida Cotidiana</a>
+    </div>
+</div>
+        
+        <a href="../">Conectar</a>
+<a href="../support/">Apoyar</a>
+<div class="language-switcher" aria-label="Idioma">
+    <a href="../../connect/" lang="en">English</a>
+    <span aria-hidden="true">|</span>
+    <span class="current-language">Español</span>
+</div>
+    </nav>
+
+   <main id="connect">
+
+    <h1>Conecta con Becoming Faithful</h1>
+
+<section class="content-section connect-intro">
+    <h2>Mantente Conectado</h2>
+
+    <p>
+        Becoming Faithful se construye una persona a la vez. Puedes conectarte
+        con Becoming Faithful a través de las plataformas que aparecen a continuación.
+    </p>
+
+    <p>
+        Elige la plataforma que mejor funcione para ti. No necesitas estar en
+        todas para formar parte de la comunidad.
+    </p>
+</section>
+<section class="content-section connect-links">
+    <h2>Encuentra Becoming Faithful en Línea</h2>
+
+    <a
+        class="connect-link"
+        href="https://www.instagram.com/joshuamarcotte12"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Instagram del Fundador
+    </a>
+
+    <a
+        class="connect-link"
+        href="https://youtube.com/@becomingfaithfulcommunity"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        YouTube
+    </a>
+
+    <a
+        class="connect-link"
+        href="https://www.facebook.com/share/1Es2pnGkpA/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Facebook del Fundador
+    </a>
+
+    <a
+        class="connect-link"
+        href="https://www.tiktok.com/@becomingfaithful7"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        TikTok
+    </a>
+
+    <a
+        class="connect-link"
+        href="https://www.threads.com/@joshuamarcotte12"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Threads del Fundador
+    </a>
+
+    <a
+        class="connect-link"
+        href="https://pin.it/6iPDdOc8w"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Pinterest
+    </a>
+
+    <a
+        class="connect-link"
+        href="https://www.linkedin.com/company/becoming-faithful/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        LinkedIn
+    </a>
+
+    <a
+        class="connect-link"
+        href="mailto:becomingfaithfulcommunity@gmail.com"
+    >
+        Enviar Correo a Becoming Faithful
+    </a>
+</section>
+<section class="site-emblem-section">
+    <img
+        src="../../images/becoming-faithful-emblem.png"
+        alt="Becoming Faithful emblem"
+        class="site-emblem"
+    >
+</section>
+    </main>
+
+    <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.querySelector('.site-nav');
+    const dropdowns = document.querySelectorAll('.nav-dropdown');
+
+    navToggle.addEventListener('click', () => {
+        const isOpen = siteNav.classList.toggle('nav-open');
+
+        navToggle.setAttribute('aria-expanded', isOpen);
+        navToggle.textContent = isOpen ? 'Cerrar' : 'Menú';
+    });
+
+    dropdowns.forEach(dropdown => {
+        const dropdownButton = dropdown.querySelector('.nav-dropdown-button');
+
+        dropdownButton.addEventListener('click', () => {
+            const isOpen = dropdown.classList.toggle('is-open');
+
+            dropdownButton.setAttribute('aria-expanded', isOpen);
+
+            dropdowns.forEach(otherDropdown => {
+                if (otherDropdown !== dropdown) {
+                    otherDropdown.classList.remove('is-open');
+
+                    const otherButton =
+                        otherDropdown.querySelector('.nav-dropdown-button');
+
+                    otherButton.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    });
+
+   const navLinks = siteNav.querySelectorAll('a:not(.nav-dropdown-button)');
+
+    navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+
+        if (window.innerWidth <= 680) {
+            siteNav.classList.remove('nav-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+           navToggle.textContent = 'Menú';
+        }
+
+        dropdowns.forEach(dropdown => {
+            dropdown.classList.remove('is-open');
+
+            const dropdownButton =
+                dropdown.querySelector('.nav-dropdown-button');
+
+            if (dropdownButton) {
+                dropdownButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+    });
+});
+</script>
+
+</body>
+</html>
