@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Support Becoming Faithful</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Learn how to support Becoming Faithful through US$1 a month, sharing the work, contributing your skills, and helping strengthen the community one person at a time."
+    >
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <nav class="site-nav">
+
+        <button class="nav-toggle" type="button" aria-expanded="false">
+            Menu
+        </button>
+
+        <a href="../#home">Home</a>
+        <a href="../#about">About</a>
+        <a href="../#mission">Mission</a>
+
+   <div class="nav-dropdown">
+    <button
+        class="nav-dropdown-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="grow-menu"
+    >
+        Grow
+    </button>
+
+    <div class="nav-dropdown-menu" id="grow-menu">
+        <a href="../#love">Love</a>
+        <a href="../#hope">Hope</a>
+        <a href="../#faith">Faith</a>
+        <a href="../#wisdom">Wisdom</a>
+        <a href="../#everyday-life">Everyday Life</a>
+    </div>
+</div>
+
+        <a href="../connect/">Connect</a>
+        <a href="./">Support</a>
+        <div class="language-switcher" aria-label="Language">
+    <span class="current-language">English</span>
+    <span aria-hidden="true">|</span>
+    <a href="../es/support/" lang="es">Español</a>
+</div>
+    </nav>
+
+    <main id="support">
+
+        <h1>Support Becoming Faithful</h1>
+
+        <section class="content-section support-intro">
+            <h2>One Person at a Time</h2>
+
+            <p>
+                Becoming Faithful is built one person at a time.
+            </p>
+
+            <p>
+                Support helps create more time and opportunity to connect with people,
+                listen to their stories, keep learning, create meaningful content,
+                and reach people who may not have found Becoming Faithful otherwise.
+            </p>
+
+            <p>
+                Even without financial support, Becoming Faithful will continue.
+            </p>
+        </section>
+        <section class="content-section support-dollar">
+    <h2>Why US$1 a Month?</h2>
+
+<p>
+    One U.S. dollar by itself is not enough to sustain the work of Becoming Faithful,
+    but one person choosing to support with US$1 per month still matters.
+</p>
+
+<p>
+    The idea is not to put the weight of Becoming Faithful on any one person or ask
+    anyone to carry more than they reasonably can. US$1 is intentionally small so
+    that supporting does not have to break anyone's back financially by itself.
+</p>
+
+<p>
+    But when many individual people each choose to put something small into the same
+    work, those small contributions can come together and become something much bigger
+    and stronger than what any one person could create alone.
+</p>
+
+<p>
+    Together, that support can create more time and opportunity to connect with people,
+    listen to their stories, keep learning, create meaningful content, strengthen the
+    community that is already here, and reach people who Becoming Faithful has not yet
+    had the opportunity to connect with.
+</p>
+
+    
+</section>
+<section class="content-section support-integrity">
+    <h2>Support Does Not Buy Influence</h2>
+
+    <p>
+        If someone chooses to give more than US$1 per month, that support is appreciated,
+        but giving more does not give anyone more influence over the message, direction,
+        priorities, or whose stories are shared.
+    </p>
+
+    <p>
+        Becoming Faithful should never become something where the amount someone gives
+        determines how much their voice matters. The goal is to remain focused on loving God,
+        loving people, learning openly, and serving one person at a time.
+    </p>
+</section>
+<section class="content-section support-continues">
+    <h2>Becoming Faithful Will Continue</h2>
+
+    <p>
+        Financial support can help create more time, improve resources, and expand the
+        opportunities to reach and connect with people, but Becoming Faithful does not
+        depend on financial support in order to continue.
+    </p>
+
+    <p>
+        If no one chooses to give, I will still keep moving forward, keep learning,
+        keep creating, and keep doing what I can one step at a time.
+    </p>
+
+    <p>
+        Support affects the time, speed, and reach of the work. It does not determine
+        whether the mission continues.
+    </p>
+</section>
+<section class="content-section support-action">
+    <h2>Support Becoming Faithful for US$1 a Month</h2>
+
+    <p>
+        If you would like to support Becoming Faithful financially, you can choose to give
+        US$1 per month through Ko-fi.
+    </p>
+
+    <p>
+        One dollar by itself is small, but when many individual people each choose to give
+        a little, together it can help create more time and opportunity to keep building,
+        creating, listening, learning, and reaching people one person at a time.
+    </p>
+
+    <a class="support-button" href="https://ko-fi.com/becomingfaithful">
+        Support for US$1 a Month
+    </a>
+</section>
+<section class="site-emblem-section">
+    <img
+        src="../images/becoming-faithful-emblem.png"
+        alt="Becoming Faithful emblem"
+        class="site-emblem"
+    >
+</section>
+    </main>
+
+    <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.querySelector('.site-nav');
+    const dropdowns = document.querySelectorAll('.nav-dropdown');
+
+    navToggle.addEventListener('click', () => {
+        const isOpen = siteNav.classList.toggle('nav-open');
+
+        navToggle.setAttribute('aria-expanded', isOpen);
+        navToggle.textContent = isOpen ? 'Close' : 'Menu';
+    });
+
+    dropdowns.forEach(dropdown => {
+        const dropdownButton = dropdown.querySelector('.nav-dropdown-button');
+
+        dropdownButton.addEventListener('click', () => {
+            const isOpen = dropdown.classList.toggle('is-open');
+
+            dropdownButton.setAttribute('aria-expanded', isOpen);
+
+            dropdowns.forEach(otherDropdown => {
+                if (otherDropdown !== dropdown) {
+                    otherDropdown.classList.remove('is-open');
+
+                    const otherButton =
+                        otherDropdown.querySelector('.nav-dropdown-button');
+
+                    otherButton.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    });
+
+   const navLinks = siteNav.querySelectorAll('a:not(.nav-dropdown-button)');
+
+    navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+
+        if (window.innerWidth <= 680) {
+            siteNav.classList.remove('nav-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.textContent = 'Menu';
+        }
+
+        dropdowns.forEach(dropdown => {
+            dropdown.classList.remove('is-open');
+
+            const dropdownButton =
+                dropdown.querySelector('.nav-dropdown-button');
+
+            if (dropdownButton) {
+                dropdownButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+    });
+});
+</script>
+
+</body>
+</html>
