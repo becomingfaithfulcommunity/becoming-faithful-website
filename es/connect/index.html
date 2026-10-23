@@ -19,7 +19,7 @@
 
     <nav class="site-nav">
 
-        <button class="nav-toggle" type="button" aria-expanded="false">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Abrir menú de navegación">
             Menú
         </button>
 
@@ -53,7 +53,7 @@
     <span aria-hidden="true">|</span>
     <span class="current-language">Español</span>
 </div>
-    </nav>
+    <div class="bfc-lang-control"><label for="bfc-language">Idioma</label><select id="bfc-language" class="bfc-language-select" aria-label="Seleccionar idioma"></select></div></nav>
 
    <main id="connect">
 
@@ -63,8 +63,8 @@
     <h2>Mantente Conectado</h2>
 
     <p>
-        Becoming Faithful se construye una persona a la vez. Puedes conectarte
-        con Becoming Faithful a través de las plataformas que aparecen a continuación.
+        Becoming Faithful se construye una persona a la vez. Puedes conectarte con Becoming Faithful a través de las redes sociales, seguir los contenidos nuevos,
+        compartirlos con otras personas, hacer preguntas y seguir creciendo con la comunidad.
     </p>
 
     <p>
@@ -152,7 +152,8 @@
         class="site-emblem"
     >
 </section>
-    </main>
+    <section class="content-section contact-invitation"><h2>¿Preguntas, ideas o ganas de ayudar?</h2><p>Si tienes una pregunta sobre la fe, una perspectiva diferente, una idea para la comunidad o alguna habilidad que deseas ofrecer, puedes escribirnos directamente.</p><p><a class="support-button" href="mailto:becomingfaithfulcommunity@gmail.com?subject=Conectar%20con%20Becoming%20Faithful">Escribe a Becoming Faithful</a></p><p class="fine-print">Evita incluir información personal sensible en tu primer mensaje.</p></section>
+</main>
 
     <script>
     const navToggle = document.querySelector('.nav-toggle');
@@ -213,5 +214,5 @@
 });
 </script>
 
-</body>
+<script src="../../languages.js" defer></script></body>
 </html>
