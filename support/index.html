@@ -1,43 +1,4 @@
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<title>Support Becoming Faithful</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Learn how to support Becoming Faithful through US$1 a month, sharing the work, contributing your skills, and helping strengthen the community one person at a time." name="description"/>
-<link href="../style.css" rel="stylesheet"/>
-</head>
-<body>
-<nav class="site-nav">
-<button aria-expanded="false" class="nav-toggle" type="button">
-            Menu
-        </button>
-<a href="../#home">Home</a>
-<a href="../#about">About</a>
-<a href="../#mission">Mission</a>
-<div class="nav-dropdown">
-<button aria-controls="grow-menu" aria-expanded="false" class="nav-dropdown-button" type="button">
-        Grow
-    </button>
-<div class="nav-dropdown-menu" id="grow-menu">
-<a href="../#love">Love</a>
-<a href="../#hope">Hope</a>
-<a href="../#faith">Faith</a>
-<a href="../#wisdom">Wisdom</a>
-<a href="../#everyday-life">Everyday Life</a>
-</div>
-</div>
-<a href="../connect/">Connect</a>
-<a href="./">Support</a>
-<div aria-label="Language" class="language-switcher">
-<span class="current-language">English</span>
-<span aria-hidden="true">|</span>
-<a href="../es/support/" lang="es">Español</a>
-</div>
-<div class="bfc-lang-control"><label for="bfc-language">Language</label><select aria-label="Select language" class="bfc-language-select" id="bfc-language"></select></div></nav>
-<main id="support">
-<h1>Support Becoming Faithful</h1>
+<!doctype html><html lang="en"><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><title>Support | Becoming Faithful</title><link rel=stylesheet href="/style.css"><link rel=stylesheet href="/update.css"><header><a href="/"><img src="/images/becoming-faithful-logo.png" alt="Becoming Faithful"></a><details><summary>Menu</summary><nav><a href="/">Home</a><a href="/about/">About</a><a href="/mission/">Mission</a><a href="/grow/">Grow</a><a href="/everyday-life/">Everyday Life</a><a href="/questions/">Ask a Question</a><a href="/projects/">Upcoming Projects</a><a href="/technology/">Basic Technology 101</a><a href="/connect/">Connect</a><a href="/support/">Support</a><label>Language / Idioma <select class="bfc-language-select"></select></label></nav></details><a href="/es/support/">Español</a></header><main><h1>Support Becoming Faithful</h1>
 <section class="content-section support-intro">
 <h2>One Person at a Time</h2>
 <p>
@@ -120,7 +81,7 @@
     </a>
 </section>
 <section class="site-emblem-section">
-<img alt="Becoming Faithful emblem" class="site-emblem" src="../images/becoming-faithful-emblem.png"/>
+<img alt="Becoming Faithful emblem" class="site-emblem" src="/images/becoming-faithful-emblem.png">
 </section>
 <section class="content-section transparency-note" id="financial-transparency">
 <h2>Financial Transparency: Where Support Goes</h2><h2>Starting Small, Growing to Serve Others</h2>
@@ -156,64 +117,4 @@
 <p>Before contributing, please ask about the current legal structure, who receives and controls funds, and applicable tax treatment. <strong>Do not assume contributions are tax-deductible.</strong> I intend to provide clearer financial updates as Becoming Faithful grows; until then, please do not mistake these goals for an existing budget or operating program.</p>
 <p><a href="mailto:becomingfaithfulcommunity@gmail.com?subject=Support%20and%20financial%20transparency">Ask a question about support or finances</a></p>
 </section>
-</main>
-<script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const siteNav = document.querySelector('.site-nav');
-    const dropdowns = document.querySelectorAll('.nav-dropdown');
-
-    navToggle.addEventListener('click', () => {
-        const isOpen = siteNav.classList.toggle('nav-open');
-
-        navToggle.setAttribute('aria-expanded', isOpen);
-        navToggle.textContent = isOpen ? 'Close' : 'Menu';
-    });
-
-    dropdowns.forEach(dropdown => {
-        const dropdownButton = dropdown.querySelector('.nav-dropdown-button');
-
-        dropdownButton.addEventListener('click', () => {
-            const isOpen = dropdown.classList.toggle('is-open');
-
-            dropdownButton.setAttribute('aria-expanded', isOpen);
-
-            dropdowns.forEach(otherDropdown => {
-                if (otherDropdown !== dropdown) {
-                    otherDropdown.classList.remove('is-open');
-
-                    const otherButton =
-                        otherDropdown.querySelector('.nav-dropdown-button');
-
-                    otherButton.setAttribute('aria-expanded', 'false');
-                }
-            });
-        });
-    });
-
-   const navLinks = siteNav.querySelectorAll('a:not(.nav-dropdown-button)');
-
-    navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-
-        if (window.innerWidth <= 680) {
-            siteNav.classList.remove('nav-open');
-            navToggle.setAttribute('aria-expanded', 'false');
-            navToggle.textContent = 'Menu';
-        }
-
-        dropdowns.forEach(dropdown => {
-            dropdown.classList.remove('is-open');
-
-            const dropdownButton =
-                dropdown.querySelector('.nav-dropdown-button');
-
-            if (dropdownButton) {
-                dropdownButton.setAttribute('aria-expanded', 'false');
-            }
-        });
-
-    });
-});
-</script>
-<script defer="" src="../languages.js"></script></body>
-</html>
+</main><script defer src="/languages.js"></script></html>

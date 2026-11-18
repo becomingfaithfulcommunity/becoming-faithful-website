@@ -117,7 +117,7 @@ const BFC_LANGUAGES = {
   let suffix = path.replace(/^\/es(?=\/)/,'/').replace(/^\//,'');
   // Published website is at the root domain; avoid using file:// URLs for translations.
   const supported = ['','connect/','support/','story/'];
-  if (!supported.includes(suffix)) suffix = '';
+
   const base = 'https://becomingfaithfulcommunity.com/';
   const url = base + suffix;
   for(const menu of menus){
@@ -129,8 +129,8 @@ const BFC_LANGUAGES = {
     }
     menu.addEventListener('change',function(){
       const code=this.value;
-      if(code==='en'){window.location.href=url;return;}
-      if(code==='es'){window.location.href=base+'es/'+suffix;return;}
+      if(code==='en'){window.location.href='/'+suffix;return;}
+      if(code==='es'){window.location.href='/es/'+suffix;return;}
       // Google Translate's external translation view supports many languages without storing visitor text on this site.
       const translated='https://translate.google.com/translate?sl=en&tl='+encodeURIComponent(code)+'&u='+encodeURIComponent(url);
       window.location.href=translated;
