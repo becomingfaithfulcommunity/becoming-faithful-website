@@ -1,5 +1,5 @@
 // Paste the HTTPS endpoint from your Becoming Faithful Formspree form here.
-const questionEndpoint = "";
+const questionEndpoint = "https://formspree.io/f/xzervyne";
 const form = document.querySelector("#ask");
 const spanish = document.documentElement.lang === "es";
 const status = form.querySelector('[role="status"]');

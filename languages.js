@@ -137,3 +137,16 @@ const BFC_LANGUAGES = {
     });
   }
 })();
+
+// Include Songs on older pages that share the site menu.
+for (const menu of document.querySelectorAll('header nav')) {
+  const spanish = document.documentElement.lang === 'es';
+  const prefix = spanish ? '/es/' : '/';
+  const path = prefix + 'songs/';
+  if (menu.querySelector('a[href="' + path + '"]')) continue;
+  const songs = document.createElement('a');
+  songs.href = path;
+  songs.textContent = spanish ? 'Canciones' : 'Songs';
+  const projects = menu.querySelector('a[href="' + prefix + 'projects/"]');
+  menu.insertBefore(songs, projects || menu.querySelector('label'));
+}
