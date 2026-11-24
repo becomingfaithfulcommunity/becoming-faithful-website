@@ -113,7 +113,7 @@ const BFC_LANGUAGES = {
 
 (function(){
   const menus = document.querySelectorAll('.bfc-language-select');
-  const path = window.location.pathname.replace(/\/+$/,'/');
+  const path = window.location.pathname.replace(/index\.html$/,'').replace(/\/+$/,'/');
   let suffix = path.replace(/^\/es(?=\/)/,'/').replace(/^\//,'');
   // Published website is at the root domain; avoid using file:// URLs for translations.
   const supported = ['','connect/','support/','story/'];
@@ -131,6 +131,7 @@ const BFC_LANGUAGES = {
       const code=this.value;
       if(code==='en'){window.location.href='/'+suffix;return;}
       if(code==='es'){window.location.href='/es/'+suffix;return;}
+      if (!['becomingfaithfulcommunity.com','www.becomingfaithfulcommunity.com'].includes(location.hostname)) { alert(current === 'es' ? 'Traducción automática disponible solo en el sitio publicado.' : 'Machine translation is available only on the published site.'); this.value=current; return; }
       // Google Translate's external translation view supports many languages without storing visitor text on this site.
       const translated='https://translate.google.com/translate?sl=en&tl='+encodeURIComponent(code)+'&u='+encodeURIComponent(url);
       window.location.href=translated;
